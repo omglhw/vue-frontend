@@ -4,16 +4,6 @@ const config = {
   loginURL: process.env.VUE_APP_LOGINURL,
   // 基础框架
   baseApi: process.env.VUE_APP_BASEURL,
-  // 报表中心
-  reportApi: process.env.VUE_APP_ENV == 'production' ? process.env.VUE_APP_REPORTURL : process.env.VUE_APP_BASEURL,
-  // 审批工作流
-  workflowApi: process.env.VUE_APP_WORKFLOWURL,
-  // publicData
-  publicDataApi: process.env.VUE_APP_PUBLICDATAURL,
-  // organization
-  organizationApi: process.env.VUE_APP_ORGANIZATIONURL,
-  // 首页管理
-  homePageManageApi: process.env.VUE_APP_BASEURL,
   // 日志中心
   logCenterApi: process.env.VUE_APP_LOGCENTERURL,
   // 分页数
