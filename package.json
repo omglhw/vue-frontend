@@ -1,0 +1,78 @@
+{
+  "name": "frontend-saas",
+  "version": "1.0.2",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build:beta": "vue-cli-service build --mode beta",
+    "build:betacg": "vue-cli-service build --mode betacg",
+    "build:betamg": "vue-cli-service build --mode betamg",
+    "build:prod": "vue-cli-service build --mode production",
+    "build:prodcg": "vue-cli-service build --mode productioncg",
+    "build:prodmg": "vue-cli-service build --mode productionmg",
+    "build:pub": "yarn build:beta && yarn build:prod",
+    "build:pubcg": "yarn build:betacg && yarn build:prodcg",
+    "build:pubmg": "yarn build:betamg && yarn build:prodmg",
+    "build:test": "vue-cli-service build --mode test",
+    "build:testcg": "vue-cli-service build --mode testcg",
+    "build:testmg": "vue-cli-service build --mode testmg",
+    "build:testgt": "vue-cli-service build --mode testgt",
+    "build:prodgt": "vue-cli-service build --mode productiongt",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "@yl/vue-extra-long-text": "git+ssh://git@git.mysre.cn:SaasComponents/vue-extra-long-text.git#V1.2.3",
+    "@yl/vue-saas-layout": "git+ssh://git@git.mysre.cn:SaasComponents/vue-saas-layout.git#V1.5.1",
+    "@yl/monitor": "git+ssh://git@git.mysre.cn:SaasComponents/monitor.git#V0.1.6",
+    "@yl/vue-raphael-paper": "git+ssh://git@git.mysre.cn:SaasComponents/vue-raphael-paper.git#V0.0.5",
+    "element-ui": "^2.12.0",
+    "is-json": "^2.0.1",
+    "lodash": "^4.17.11",
+    "nprogress": "^0.2.0",
+    "qrcode": "^1.4.4",
+    "sortablejs": "1.10.1",
+    "tippy.js": "^5.1.2",
+    "tree-model": "^1.0.7",
+    "vuedraggable": "^2.23.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-unit-jest": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-prettier": "5.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "compression-webpack-plugin": "^3.0.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "lint-staged": "^9.2.5",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^8.0.0",
+    "style-resources-loader": "^1.2.1",
+    "vue-cli-plugin-style-resources-loader": "^0.1.3",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "src/**/*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "src/**/*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "main": "src/main.js"
+}

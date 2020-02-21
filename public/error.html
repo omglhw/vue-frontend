@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: PingFangSC-Regular;
+    }
+
+    .err-page {
+      background-color: #fff;
+      height: 100%;
+      min-width: 920px;
+    }
+
+    .err-box {
+      margin: auto;
+      overflow: hidden;
+      width: 920px;
+      height: 250px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -470px;
+      margin-top: -125px;
+    }
+
+    button {
+      display: inline-block;
+      line-height: 1;
+      white-space: nowrap;
+      cursor: pointer;
+      border: 1px solid #DCDFE6;
+      border-color: #DCDFE6;
+      text-align: center;
+      box-sizing: border-box;
+      outline: none;
+      margin: 0;
+      transition: .1s;
+      font-weight: 500;
+      padding: 12px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    .primary {
+      color: #FFFFFF;
+      background-color: #1F93FF;
+      border-color: #1F93FF;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+      min-width: 88px;
+    }
+
+    .primary:hover {
+      background: #4ca9ff;
+      border-color: #4ca9ff;
+      color: #FFFFFF;
+    }
+
+    .err-text {
+      position: absolute;
+      top: 53px;
+      left: 145px;
+      width: 115px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 28px;
+      color: rgba(100, 100, 100, 1);
+      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6), 0px 0px 0px rgba(255, 218, 14, 1);
+    }
+
+    .err-info {
+      position: absolute;
+      top: 50px;
+      left: 510px;
+      width: 400px;
+      font-size: 18px;
+      color: rgba(51, 51, 51, 1);
+    }
+
+    .err-btn {
+      position: absolute;
+      top: 130px;
+      left: 510px;
+    }
+  </style>
+  <script>
+    function goback() {
+      document.location.href = ""
+    }
+  </script>
+</head>
+
+<body>
+  <div class="err-page">
+    <div class="err-box">
+      <div class="err-text">
+        404
+      </div>
+      <img src="./error.png" alt="404">
+      <div class="err-info">
+        <!-- 尊敬的用户，您好！ <br />您的账号未授权任何系统权限，请联系超级用户。 -->
+        您访问的页面不存在
+      </div>
+      <div class="err-btn">
+        <button type="button" class="primary" onclick="goback()">
+          <span>
+            返回
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

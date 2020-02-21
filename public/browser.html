@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>温馨提示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .import-browser-tips {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .import-browser-tips .master {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+
+        .layer {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 630px;
+            height: 380px;
+            margin-top: -190px;
+            margin-left: -314px;
+            background-color: #fff;
+            -moz-opacity: 1;
+            -khtml-opacity: 1;
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        .layer-head,
+        .layer-footer {
+            height: 50px;
+            line-height: 50px;
+            background-color: #F4F5FA;
+        }
+
+        .layer-head {
+            padding-left: 16px;
+        }
+
+        .layer-footer span {
+            display: inline-block;
+            width: 106px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 500px;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            background-color: #49B34F;
+        }
+
+        .layer-content {
+            height: 240px;
+            padding: 20px 30px;
+        }
+
+        .layer-content .layer-content-tips {
+            margin-bottom: 20px;
+            line-height: 26px;
+            color: #333;
+        }
+
+        .layer-content .layer-content-download {
+            height: 160px;
+        }
+
+        .layer-content .layer-content-download a {
+            display: inline-block;
+        }
+
+        .layer-content .layer-content-download div {
+            display: inline-block;
+            height: 140px;
+            width: 180px;
+            text-align: center;
+        }
+
+        .browser-hide {
+            display: none;
+        }
+
+        .import-browser-tips .layer-content-download a {
+            text-decoration: none;
+            border: 0 none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="import-browser-tips ">
+        <div class="master"></div>
+        <div class="layer">
+            <div class="layer-head">
+                <span>温馨提示</span>
+            </div>
+            <div class="layer-content" style="height: 280px;">
+                <div class="layer-content-tips">您的IE浏览器版本过低，将影响系统部分功能的正常使用，推荐使用Chrome、360极速版、ie10及以上版本，可点击下方的链接进行下载！
+                </div>
+                <div class="layer-content-download">
+                    <a href="http://www.google.cn/chrome/browser/desktop/index.html" class="chrome">
+                        <div>
+                            <img src="https://static.myfuwu.com.cn/static/passport/images/chrome.jpg">
+                            <div>
+                                <span style="color: #333;">chrome</span>
+                                <span style="color: #f00;">（首推）</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://chrome.360.cn" class="browser-360">
+                        <div>
+                            <img src="https://static.myfuwu.com.cn/static/passport/images/360.jpg">
+                            <div>
+                                <span style="color: #333;">360极速版</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=40901" class="ie">
+                        <div>
+                            <img src="https://static.myfuwu.com.cn/static/passport/images/ie.jpg">
+                            <div>
+                                <span style="color: #333;">ie10及以上</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+html {
+  background: #fff;
+}
+
+// popper 样式2
+.popper-style2 {
+  .el-popover__title {
+    font-size: 14px;
+    color: #999;
+    border-bottom: 1px solid #EBEEF5;
+    padding-bottom: 16px;
+  }
+}
+
+
+.el-link+.el-link {
+  margin-left: 8px;
+}
+
+
+
+@-moz-document url-prefix() {
+
+  // 火狐会莫名出现滚动条框，排查不到原因，在此手动隐藏滚动条框
+  .el-scrollbar__wrap {
+    margin-right: -17px;
+    margin-bottom: -17px;
+  }
+}
+
+// el-talbe 排序样式
+.sortable table.el-table__body tr {
+  cursor: move;
+}
+
+// 两行自动
+.ellipsis-row-2 {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+// cascader默认高
+.el-cascader-menu__wrap {
+  height: 204px
+}
+
+// select 搜索
+.select-search {
+  .el-input__prefix {
+    position: absolute;
+    right: 8px;
+    width: 20px;
+    top: 9px;
+    left: auto;
+  }
+
+}
+
+// 表格列padding
+.table-padding-none {
+  .cell {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+// 表格列padding
+.table-padding-min {
+  .cell {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+// 表格列padding
+.table-padding-min2 {
+  .cell {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+// 时间范围分隔文字被截
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+.el-notification.notification-520 {
+  width: 520px;
+}
+
+// 通知样式，段落
+.notification-part {
+  width: 435px;
+
+  p {
+    padding: 5px 0;
+    display: flex;
+
+    .dot {
+      color: #C8C8C8;
+      width: 20px;
+    }
+  }
+}
+
+// el-select 搜索图标
+.el-select-search {
+  :global(.el-select__caret) {
+    transform: rotateZ(0deg) !important;
+
+    &:before {
+      // 搜索图标
+      content: '\E778';
+    }
+  }
+}
+
+// 图片自定义加载失败内容
+.image-slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #f5f7fa;
+  color: #d9dde3;
+
+  i {
+    font-size: 70px;
+  }
+}
+
+
+// toop-tip 新样式
+.el-tooltip__popper.is-light.saas {
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+  border: 1px solid #e4e7ed;
+
+  .popper__arrow {
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    border-bottom-color: #cdcdce;
+  }
+}
+
+// 模拟input 禁用的样式
+.input-text {
+  outline: none;
+  padding: 0 15px;
+  background-color: #F5F7FA;
+  border-color: #E4E7ED;
+  color: #C8C8C8;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 4px;
+  border: 1px solid #DCDFE6;
+}
+
+//
+.el-link+.el-link {
+  margin-left: 8px;
+}
+
+.el-cascader.saas {
+  .el-cascader__tags .el-tag {
+    max-width: 145px;
+
+  }
+
+}
+
+
+//  修改type=number的样式
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
